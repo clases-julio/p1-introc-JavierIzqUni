@@ -13,6 +13,7 @@ using namespace std;
 int main() { // function main begins program execution
   double num1, num2;
   double sum , dif, mult, div;
+  
   cout << "Introduce two numbers\n"; // show message
   cout << "Introduce one: ";
   cin >> num1;
