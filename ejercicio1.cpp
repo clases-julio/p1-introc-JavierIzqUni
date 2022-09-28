@@ -32,8 +32,13 @@ int main() { // function main begins program execution
   cout << "The result of " << num1 << " minus " << num2 << " is: " << dif << endl;
 
   // Divide and print the result in the terminal.
-  div = num1 / num2;
-  cout << "The result of " << num1 << " divided by" << num2 << " is: " << div << endl;
+  if (num1 == 0 && num2 == 0) // If both numbers are 0, then not divide
+  {
+    cout << "The result of " << num1 << " divided by " << num2 << " is not defined" << endl;
+  } else {
+    div = num1 / num2;
+    cout << "The result of " << num1 << " divided by " << num2 << " is: " << div << endl;
+  }
 
   // End of program
   return 0;
