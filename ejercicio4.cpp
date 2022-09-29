@@ -22,7 +22,7 @@ int main() { // function main begins program execution
   sum = num1 + num2 + num3;
   cout << "La suma es " << sum << endl;
 
-  // Do the  and print the result in the terminal
+  // Do the average and print the result in the terminal
   prom = ( num1 + num2 + num3) / 3;
   cout << "El promedio es " << prom << endl;
 
