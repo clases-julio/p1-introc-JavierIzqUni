@@ -1,9 +1,8 @@
 /* ---------------------------
-File: ejercicio1.cpp
+File: ejercicio3.cpp
 Author: Javier Izquierdo
-Date: 28/09/22
-Goal: program that asks for two numbers and prints the sum,
-substract, multiplication and division of them.
+Date: 29/09/22
+Goal: program that asks for two numbers and prints which one is greater
 ---------------------------- */
 
 #include <iostream>
