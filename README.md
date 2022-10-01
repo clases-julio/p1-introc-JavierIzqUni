@@ -112,4 +112,4 @@
     }
     ```
 
-    Also the other problem I encounter was the same one that I had on excercise 1. [Problem of excercise 1](/clases-julio/p1-introc-JavierIzqUni/README###P1-IntroCPP)
+    Also the other problem I encounter was the same one that I had on excercise 1. [Problem of excercise 1](#P1-IntroCPP)
