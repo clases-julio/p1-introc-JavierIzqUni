@@ -127,3 +127,69 @@ The only issue I encountered during this excercise was that the number of iterat
 // Add 1 to the iterations to have the number of terms of the series
 cout << left << setw(15) << iterations + 1 << left << setw(15) << pi << endl;
 ```
+### Ejercicio 10
+
+I decided to generalize the formulas used, so that the code can be used for any type of figure with an odd number ( 11x11, 15x15, .... ).
+```cpp
+int squareSize = 9; // Must be and odd number: 11, 13, 7, ...
+
+// Top and left vertex is square - 1 / 2. Represented by T.
+int topLeftVertex = (squareSize - 1)/ 2;
+// Bottom and right vertex is top + square -1. Represented by B.
+int bottomRightVertex = topLeftVertex + (squareSize - 1);
+
+     0 1 2 3 4 5 6 7 8
+  0          T 
+  1        * * * 
+  2      * * * * * 
+  3    * * * * * * * 
+  4  T * * * * * * * B
+  5    * * * * * * * 
+  6      * * * * * 
+  7        * * * 
+  8          B 
+```
+I use the following formulas to calculate the spaces where I don't need to print the asterisks. So the number 1 and 2 are used to print blank spaces and the number 3 and 4 are used to break the inner loop.
+
+1. Top Left blank space
+
+    To obtain the triangle space between (0,3) and (0,3) I did observed that the blank spaces are situated when the sum of the rows and columns is below 4. The formula for this space is:
+    ```cpp
+    // For example: Row 1, Column 3 = 4 not < 4 or Row 2, Column 0 = 2 < 4 
+    if ( rows + columns < topLeftVertex) 
+      cout << space;
+    ```
+2. Bottom Left blank space
+
+    The formula used in the triangle between (5,8) and (0,3) is:
+    ```cpp
+    // For example: Row 5, Column 0 = 5 > 4 + 0 * 2 or Row 7, Column 3 = 9 not > 4 + 3 * 2 
+    if ( rows + columns > topLeftVertex + columns * 2) 
+      cout << space;
+    ```
+
+3. Top Right blank space
+
+    In this space and in the next I decided to use a break statement instead of printing blank spaces, because it reduces the amount of print statements, the result will be the same and also will be much faster because it doesn't need to loop as much times as with printing blank spaces.
+
+    The formula used in the triangle between (0,3) and (5,8) is:
+    ```cpp
+    // For example: Row 2, Column 7 = 9 > 4 + 2 * 2 or Row 3, Column 6 = 9 not > 4 + 3 * 2 
+    if ( rows + columns > topLeftVertex + rows * 2) 
+      break;
+    ```
+4. Bottom Right blank space
+
+    In this space, as said before, I used a break statement instead of printing blank spaces.
+    
+    The formula used in the triangle between (5,8) and (5,8) is:
+    ```cpp
+    // For example: Row 5, Column 6 = 11 not > 12 or Row 7, Column 7 = 14 > 12 
+    if ( rows + columns > bottomRightVertex ) 
+      break;
+    ```
+
+### Bonus
+I accidentally made the bonus excercise while making the [excercise 10](#ejercicio-10), and it also works for higher odd numbers than 19.
+
+I also added a fail protection in case someone inputs an even number.
