@@ -192,4 +192,4 @@ I use the following formulas to calculate the spaces where I don't need to print
 ### Bonus
 I accidentally made the bonus excercise while making the [excercise 10](#ejercicio-10), and it also works for higher odd numbers than 19.
 
-I also added a fail protection in case someone inputs an even number.
+I also added a fail protection in case someone inputs an even number or a negative one.

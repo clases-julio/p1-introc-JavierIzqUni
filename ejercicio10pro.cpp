@@ -26,6 +26,12 @@ int main() { // function main begins program execution
     return 1;
   }
 
+  // Check if the number is negative
+  if (squareSize < 0 ) {
+    cout << "Error: You must input a positive number" << endl;
+    return 1;
+  }
+
   // If the number is 1, I need to print it separated because it doesn't have vertices
   if (squareSize == 1) {
     cout << asterisk << endl;
