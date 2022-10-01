@@ -44,7 +44,7 @@ int main() { // function main begins program execution
 
   // e = 1 + x/1! + x^2/2! + x^3/3! + ...
   while (precission > 0){
-    e += pow(x,precission) / factorial(precission); // Used 1.0 to make the division result be a double
+    e += pow(x,precission) / factorial(precission);
     precission --;
   }
 

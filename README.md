@@ -121,3 +121,9 @@
     Also I asked the user to enter the power of e to calculate because this wasn't asked in the excercise, but I think is more complete this way.
 
 ### Ejercicio 9
+The only issue I encountered during this excercise was that the number of iterations wasn't equal to the number of terms of the series, so I had to add one to the iterations when I needed to print them into the table.
+
+```cpp
+// Add 1 to the iterations to have the number of terms of the series
+cout << left << setw(15) << iterations + 1 << left << setw(15) << pi << endl;
+```
