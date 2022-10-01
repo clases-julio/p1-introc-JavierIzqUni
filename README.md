@@ -112,4 +112,4 @@
     }
     ```
 
-    Also the other problem I encounter was the same one that I had on excercise 1. [Problem of excercise 1](###Ejercicio%201)
+    Also the other problem I encounter was the same one that I had on excercise 1. [Problem of excercise 1](#ejercicio-1)
