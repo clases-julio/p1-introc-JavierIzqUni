@@ -7,7 +7,7 @@ its digits separated by spaces
 ---------------------------- */
 
 #include <iostream>
-#include<cmath>
+#include<cmath> // Used for calculate 10^digit
 
 using namespace std;
 
