@@ -113,3 +113,11 @@
     ```
 
     Also the other problem I encounter was the same one that I had on excercise 1. [Problem of excercise 1](#ejercicio-1)
+
+3. Part c.
+
+    To solve the problem I reuse the same code I used in the previous part.
+
+    Also I asked the user to enter the power of e to calculate because this wasn't asked in the excercise, but I think is more complete this way.
+
+### Ejercicio 9
