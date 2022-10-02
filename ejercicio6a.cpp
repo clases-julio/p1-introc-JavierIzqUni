@@ -2,7 +2,7 @@
 File: ejercicio6a.cpp
 Author: Javier Izquierdo
 Date: 29/09/22
-Goal: program that prints out this patron
+Goal: program that prints out this pattern
 * * * * * * * *
  * * * * * * * *
 ---------------------------- */

@@ -13,7 +13,7 @@ using namespace std;
 int main() { // function main begins program execution
   // Declare variables
   int rad;
-  float PI = 3.14159;
+  double PI = 3.14159;
   
   cout << "Introduce the radius (must be an integer): "; // show message
   cin >> rad;

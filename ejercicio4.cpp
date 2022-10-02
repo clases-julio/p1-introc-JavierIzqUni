@@ -41,13 +41,11 @@ int main() { // function main begins program execution
   }
   
   // Compare the number3 with the current min and max
-  if (max < num3){
+  if (max < num3)
     max = num3;
-  }
 
-  if (min > num3){
+  if (min > num3)
     min = num3;
-  }
   // --------------------------------------
 
   // Print the result

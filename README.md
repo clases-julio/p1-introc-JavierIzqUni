@@ -4,6 +4,106 @@
 
 ### Ejercicio 1
 
+The main problem that I encounter was the inacuracy od the division because it was converting the result to an integer. So in order to solve this issue, and to also permit the user to input any type of number, I declared the variables that later will be used to store the input numbers to be doubles. With this the accuracy of the division is now correct.
+
+### Ejercicio 2
+
+1. Part a.
+
+    A simple program that just prints the number with a spce in between.
+
+    ```cpp
+    cout << "1 2 3 4\n";
+    ```
+
+2. Part b.
+
+    The same as the previous part, but using four <<.
+
+    ```cpp
+    cout << "1 " << "2 " << "3 " << "4\n";
+    ```
+
+3. Part c.
+
+    Almost the same as part b, but instead of using one print instruction, I used four.
+
+    ```cpp
+    cout << "1 ";
+    cout << "2 ";
+    cout << "3 ";
+    cout << "4\n";
+    ```
+
+### Ejercicio 3
+
+I decided to use an if - else if - else structure instead of using an if and if - else because I think it makes sense to have the 3 different outputs in the same statement. 
+
+First, I compared the two numbers to find which one is greater, and then if they enter in the else statement I print that they are equal.
+
+### Ejercicio 4
+
+The main problem that I found in this excercise was to use the least amount of comparisons used. So in order to solve this problem I used the next approach:
+
+1. Compare the first two numbers and assign them to the max and min values.
+
+    ```cpp
+    // 1 comparison
+    if (num1 > num2 ){
+      max = num1;
+      min = num2;
+    } else {
+      min = num1;
+      max = num2;
+    }
+    ```
+
+2. Compare the third value to the new max and min values.
+
+    ```cpp
+    // 2 comparisons
+    if (max < num3)
+      max = num3;
+
+    if (min > num3)
+      min = num3;
+    ```
+With this approach the total number of comparisons is 3, which is the theoretical minimum number, so the code will be faster and more efficient.
+
+### Ejercicio 5
+
+In this excercise we print directly the results of the operations, so we don't need to declare and initialize variables to store them.
+```cpp
+cout << "The result is: " << 20 + 3 << endl; // Prints 23 
+```
+
+### Ejercicio 6
+
+1. Part a.
+
+    I use 8 print statements in order to print the requested pattern.
+
+2. Part b.
+
+    For this part, the excercise tells me to use the minimum amount of instructions. So, I decided to store each row structure in two different strings, and then printing them using a for loop.
+
+    I don't like this approach, but it is the one that uses the minimum amount of instructions. The problem with this is that you manually have to change the two strings and the for loop if you want to change the pattern.
+
+    My desired approach would be to use two nested for loops and then use if statements to decide whether to print the asterisks or the blank spaces. With this approach, you only need to change the pattern size to create any different pattern. The downside is that it uses a lot more of instructions than the other approach.
+
+    ```cpp
+    for (int rows = 0; rows < size; rows++) {
+
+      for (int columns = 0; columns < size; columns++) {
+        if ( ( rows + columns ) % 2 == 0)
+          cout << "*";
+        else
+          cout << " ";
+      }
+
+      cout << endl;
+    }
+    ```
 
 ### Ejercicio 7
 
