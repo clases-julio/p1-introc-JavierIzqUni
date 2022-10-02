@@ -4,7 +4,7 @@
 
 ### Ejercicio 1
 
-The main problem that I encounter was the inacuracy od the division because it was converting the result to an integer. So in order to solve this issue, and to also permit the user to input any type of number, I declared the variables that later will be used to store the input numbers to be doubles. With this the accuracy of the division is now correct.
+The main problem that I encounter was the inacuracy of the division because it was converting the result to an integer. So in order to solve this issue, and to also permit the user to input any type of number, I declared the variables that later will be used to store the input numbers to be doubles. With this the accuracy of the division is now correct.
 
 ### Ejercicio 2
 
