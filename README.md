@@ -113,7 +113,7 @@ cout << "The result is: " << 20 + 3 << endl; // Prints 23
     }
     ```
 
-    Today, I asked the proffesor and told me to use the scalable approach, so I change it.
+    Today, I asked the professor and told me to use the scalable approach, so I change it.
 
 ### Ejercicio 7
 
