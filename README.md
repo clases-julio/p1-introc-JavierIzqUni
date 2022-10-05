@@ -87,14 +87,22 @@ cout << "The result is: " << 20 + 3 << endl; // Prints 23
 
     For this part, the excercise tells me to use the minimum amount of instructions. So, I decided to store each row structure in two different strings, and then printing them using a for loop.
 
+    ```cpp
+    string pattern1 = "* * * * * * * *\n";
+    string pattern2 = " * * * * * * * *\n";
+    
+    for(int lines = 0; lines < 8; lines+=2)
+      cout << pattern1 << pattern2; 
+    ```
+
     I don't like this approach, but it is the one that uses the minimum amount of instructions. The problem with this is that you manually have to change the two strings and the for loop if you want to change the pattern.
 
     My desired approach would be to use two nested for loops and then use if statements to decide whether to print the asterisks or the blank spaces. With this approach, you only need to change the pattern size to create any different pattern. The downside is that it uses a lot more of instructions than the other approach.
 
     ```cpp
-    for (int rows = 0; rows < size; rows++) {
+    for (int rows = 0; rows < rowSize; rows++) {
 
-      for (int columns = 0; columns < size; columns++) {
+      for (int columns = 0; columns < columnSize; columns++) {
         if ( ( rows + columns ) % 2 == 0)
           cout << "*";
         else
@@ -104,6 +112,8 @@ cout << "The result is: " << 20 + 3 << endl; // Prints 23
       cout << endl;
     }
     ```
+
+    Today, I asked the proffesor and told me to use the scalable approach, so I change it.
 
 ### Ejercicio 7
 

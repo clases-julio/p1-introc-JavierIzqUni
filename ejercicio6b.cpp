@@ -13,11 +13,22 @@ using namespace std;
 
 int main() { // function main begins program execution
   // Declare and initialize variables
-  string pattern1 = "* * * * * * * *\n";
-  string pattern2 = " * * * * * * * *\n";
-  
-  for(int lines = 0; lines < 8; lines+=2)
-    cout << pattern1 << pattern2; 
+  char pattern1 = '*';
+  char pattern2 = ' ';
+  int rowSize = 8;
+  int columnSize = 16;
+
+  for (int rows = 0; rows < rowSize; rows++) {
+
+    for (int columns = 0; columns < columnSize; columns++) {
+      if ( ( rows + columns ) % 2 == 0)
+        cout << "*";
+      else
+        cout << " ";
+    }
+
+    cout << "\n";
+  }
 
   // End of program
   return 0;
